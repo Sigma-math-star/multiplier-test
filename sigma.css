@@ -37,8 +37,10 @@ body { margin:0; color:var(--sigma-black); background:#F5F6F8; }
 #quiz-container > header h1 { font-size:17px; line-height:1.45; }
 #quiz-container > header p { font-size:12px; margin-top:4px; color:#5D626C; }
 #quiz-container > header > div > div:last-child { flex-shrink:0; }
-#quiz-container > header > div > div:last-child > div { display:block; width:135px; height:38px; margin:0 12px 0 0; padding:0; border:0; border-radius:0; box-shadow:none; background: url('./sigma-logo.svg') no-repeat center/contain; }
-#quiz-container > header > div > div:last-child > div > svg { display:none; }
+#quiz-container .sigma-school-link { display:flex; flex-direction:column; align-items:flex-end; gap:6px; color:var(--sigma-blue); text-decoration:none; }
+#quiz-container .sigma-school-link img { display:block; width:180px; height:auto; }
+#quiz-container .sigma-school-link span { font-size:12px; line-height:1.5; text-decoration:underline; text-underline-offset:3px; }
+#quiz-container .sigma-school-link:hover span { color:#243471; }
 #quiz-container main { max-width:1080px; padding:36px 28px; }
 
 /* Welcome: existing text and mascot, arranged as one calm learning card. */
@@ -115,7 +117,8 @@ body { margin:0; color:var(--sigma-black); background:#F5F6F8; }
   #quiz-container > header h1 { font-size:12px; }
   #quiz-container > header p { font-size:10px; line-height:1.5; }
   #quiz-container > header > div > div:last-child { gap:8px; }
-  #quiz-container > header > div > div:last-child > div { width:82px; height:28px; margin:8px 0 0; }
+  #quiz-container .sigma-school-link img { width:128px; }
+  #quiz-container .sigma-school-link span { font-size:11px; }
   #quiz-container main { padding:20px 16px; }
   #screen-welcome { grid-template-columns:1fr; padding:26px 22px; gap:0; border-radius:22px; margin:0; }
   #screen-welcome > div:first-child { grid-column:auto; grid-row:auto; margin:0 0 18px; }
